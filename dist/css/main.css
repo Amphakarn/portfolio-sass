@@ -254,6 +254,7 @@
 
 .about__bio-image p {
   margin-bottom: 2rem;
+  line-height: 1.2rem;
 }
 
 .about__bio {
@@ -296,6 +297,7 @@
 
 .about .jobs__job ul li {
   padding: 0.4rem 0;
+  line-height: 1.2rem;
 }
 
 .about .social-icons {
