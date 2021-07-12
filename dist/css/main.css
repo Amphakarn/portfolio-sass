@@ -1,3 +1,5 @@
+@import url("https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@300&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Lato&display=swap");
 * {
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -7,7 +9,7 @@
 
 .home {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 45vh;
   overflow: hidden;
   -webkit-box-align: center;
       -ms-flex-align: center;
@@ -254,7 +256,7 @@
 
 .about__bio-image p {
   margin-bottom: 2rem;
-  line-height: 1.2rem;
+  line-height: 1.3rem;
 }
 
 .about__bio {
@@ -444,7 +446,7 @@
 
 .contact {
   height: 100%;
-  padding-top: 40vh;
+  padding-top: 45vh;
   overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -480,12 +482,80 @@
   margin-top: 2rem;
 }
 
+@media screen and (min-width: 768px) {
+  .menu-btn {
+    visibility: hidden;
+  }
+  .nav {
+    visibility: visible;
+  }
+  .nav .menu-nav {
+    display: block;
+    transform: translateY(0);
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    height: 100%;
+    background: transparent;
+    text-align: right;
+  }
+  .nav .menu-nav__item {
+    display: inline;
+    padding-right: 1.5rem;
+  }
+  .nav .menu-nav__link {
+    font-size: 1.5rem;
+  }
+  .about__bio {
+    font-size: 1.25rem;
+  }
+  .projects__bio-image {
+    height: 50vh;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+  .projects .text-secondary {
+    font-size: 3rem;
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr)[2];
+        grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media screen and (min-width: 1024px) {
+  .about__bio-image {
+    height: 58vh;
+  }
+  .projects__items {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+  .contact__list {
+    -ms-grid-columns: (1fr)[3];
+        grid-template-columns: repeat(3, 1fr);
+  }
+}
+
+@media screen and (min-width: 1600px) {
+  .about__bio-image {
+    height: 55vh;
+  }
+  .projects__bio-image {
+    height: 55vh;
+  }
+}
+
 body {
   background: #272727;
   color: #fff;
   height: 100vh;
   font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   line-height: 1;
+  letter-spacing: 0.07rem;
 }
 
 h1,
